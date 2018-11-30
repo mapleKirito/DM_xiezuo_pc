@@ -2108,6 +2108,85 @@
 	</permission>
 	
 	<!-- ********探究热身结束******** -->
+	<!-- ********智能答题开始******** -->
+	<permission>
+		<index>tea_exercises</index>
+		<code>002032011</code>
+		<parentCode>002032</parentCode>
+		<name>智能答题管理</name>
+		<isValid>1</isValid>
+		<type>1</type>
+		<dataSource>MYSQL_datasource</dataSource>
+		<dataHandlerBean></dataHandlerBean>
+		<initEvent></initEvent>
+		<isTransaction>0</isTransaction>
+		<beforeExecuteCode></beforeExecuteCode>
+		<defaultEvent></defaultEvent>
+		<extendEvent></extendEvent>
+		<afterExecuteCode></afterExecuteCode>
+		<icon></icon>
+		<directName>module/teacher/tea_exercises/tea_exercises_main.jsp</directName>
+		<imitationStep></imitationStep>
+		<paixu>0</paixu>
+	</permission>
+	<permission>
+		<index>tea_exercises_exam</index>
+		<code>002032011001</code>
+		<parentCode>002032011</parentCode>
+		<name>测验管理</name>
+		<isValid>1</isValid>
+		<type>1</type>
+		<dataSource>MYSQL_datasource</dataSource>
+		<dataHandlerBean></dataHandlerBean>
+		<initEvent></initEvent>
+		<isTransaction>0</isTransaction>
+		<beforeExecuteCode></beforeExecuteCode>
+		<defaultEvent>com.ow.framework.listener.event.impl.PaginationListEvent{sqlid:['histask.select_page','histask.select_page_count']}</defaultEvent>
+		<extendEvent></extendEvent>
+		<afterExecuteCode></afterExecuteCode>
+		<icon>images/common/004.gif</icon>
+		<directName>module/teacher/tea_exercises/tea_exercises_exam_list.jsp</directName>
+		<imitationStep></imitationStep>
+	</permission>
+	<permission>
+		<index>tea_exercises_assign</index>
+		<code>002032011002</code>
+		<parentCode>002032011</parentCode>
+		<name>分发管理</name>
+		<isValid>1</isValid>
+		<type>1</type>
+		<dataSource>MYSQL_datasource</dataSource>
+		<dataHandlerBean></dataHandlerBean>
+		<initEvent></initEvent>
+		<isTransaction>0</isTransaction>
+		<beforeExecuteCode></beforeExecuteCode>
+		<defaultEvent>com.ow.framework.listener.event.impl.PaginationListEvent{sqlid:['histask.select_page','histask.select_page_count']}</defaultEvent>
+		<extendEvent></extendEvent>
+		<afterExecuteCode></afterExecuteCode>
+		<icon>images/common/004.gif</icon>
+		<directName>module/teacher/tea_exercises/tea_exercises_assign_list.jsp</directName>
+		<imitationStep></imitationStep>
+	</permission>
+	<permission>
+		<index>tea_exercises_dataFeedback</index>
+		<code>002032011003</code>
+		<parentCode>002032011</parentCode>
+		<name>数据反馈</name>
+		<isValid>1</isValid>
+		<type>1</type>
+		<dataSource>MYSQL_datasource</dataSource>
+		<dataHandlerBean></dataHandlerBean>
+		<initEvent></initEvent>
+		<isTransaction>0</isTransaction>
+		<beforeExecuteCode></beforeExecuteCode>
+		<defaultEvent>com.ow.framework.listener.event.impl.PaginationListEvent{sqlid:['histask.select_page','histask.select_page_count']}</defaultEvent>
+		<extendEvent></extendEvent>
+		<afterExecuteCode></afterExecuteCode>
+		<icon>images/common/004.gif</icon>
+		<directName>module/teacher/tea_exercises/tea_exercises_dataFeedback.jsp</directName>
+		<imitationStep></imitationStep>
+	</permission>
+	<!-- ********智能答题结束******** -->
 	<permission>
 		<index>space_img</index>
 		<code>-600102</code>

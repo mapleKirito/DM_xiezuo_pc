@@ -117,6 +117,10 @@ $(document).ready(function(){
 							<a id="002032003" href="javascript:void(0);">我的资源<i></i><em></em>
 							</a>
 						</dd>
+						<dd>
+							<a id="002032011" href="javascript:void(0);">答题组卷<i></i><em></em>
+							</a>
+						</dd>
 						
 						<dt class="menu_title" style="position: relative;">个人管理<i class="icon-menu"></i>
 						</dt>
