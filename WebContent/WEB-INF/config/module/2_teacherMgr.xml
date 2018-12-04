@@ -2141,7 +2141,7 @@
 		<initEvent></initEvent>
 		<isTransaction>0</isTransaction>
 		<beforeExecuteCode></beforeExecuteCode>
-		<defaultEvent>com.ow.framework.listener.event.impl.PaginationListEvent{sqlid:['histask.select_page','histask.select_page_count']}</defaultEvent>
+		<defaultEvent>com.ow.framework.listener.event.impl.PaginationListEvent{sqlid:['exam.select_page','exam.select_page_count']}</defaultEvent>
 		<extendEvent></extendEvent>
 		<afterExecuteCode></afterExecuteCode>
 		<icon>images/common/004.gif</icon>

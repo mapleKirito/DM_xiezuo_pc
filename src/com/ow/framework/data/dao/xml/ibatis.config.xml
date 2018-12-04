@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
 <configuration>
+	
 	<properties resource="jdbc.properties"></properties>
+	<settings>  
+        <setting name="logImpl" value="LOG4J" />    
+    </settings>
 	<typeAliases >
 		<typeAlias type="java.util.HashMap" alias="param"/>
 		<typeAlias type="java.util.HashMap" alias="result" />
@@ -76,6 +80,9 @@
 		<mapper resource="com/ow/framework/data/dao/xml/mysql/SYS_TestInfoCount.xml" />
 		<mapper resource="com/ow/framework/data/dao/xml/mysql/SYS_MyGallery.xml" />
 		<mapper resource="com/ow/framework/data/dao/xml/mysql/RES_LovecountryRoom.xml" />
-
+		<!-- 智能组卷 -->
+		<mapper resource="com/ow/framework/data/dao/xml/mysql/exercises_exam_list.xml" />
+		<mapper resource="com/ow/framework/data/dao/xml/mysql/exercises_assign_list.xml" />
+		<mapper resource="com/ow/framework/data/dao/xml/mysql/exercises_reply_list.xml" />
 	</mappers>
 </configuration>

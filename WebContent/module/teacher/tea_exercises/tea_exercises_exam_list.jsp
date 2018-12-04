@@ -24,24 +24,24 @@ var ujdata = {
     },
    	columnDesc:{
     	//列表要显示的列（在json中对应的key）
-		showColumn: ['htaskTitle','htaskKeywords','htaskCreatetime'],
+		showColumn: ['examName','examCreateTime'],
 		//列表头显示名称
-		columnName:   ['问题标题','问题关键词','创建时间'],
+		columnName:   ['测验名称','创建时间'],
 		//列表头宽度
-		columnWidth:   ['50%','20%','10%'],
+		columnWidth:   ['50%','30%'],
 		//可以作为主键的类，在页面传送的过程中为paramMap.orgID=value的形式
 		//多个主键的时候为["orgID","orgCode"]:paramMap.orgID=value&paramMap.orgCode=value
-		primkeyColumn:["htaskID","htaskIssplit","htaskKeywords"],
+		primkeyColumn:["examID"],
 		//要增加链接的列，可以为多个
 		linkColumn: [{
-			name: 'htaskTitle',
+			name: 'examName',
 			url: 'decorateForwardAction.action',
 			param: 'explore'
 		}]
    	},		
    	ajax:{
        	url:'ajaxAction.action',
-       	data:'code=${pmsIndex.tea_histask_param_search.code}'
+       	data:'code=${pmsIndex.tea_exercises_exam.code}'
     },
     //是否有分页工具条
     isPagination:'true',	    
@@ -66,11 +66,11 @@ var ujoption = {
 	}
 };
    $('#grid').gridTB(ujdata,ujoption);
-   $("#search_").click(function(){
+   $("#_search").click(function(){
       	ujdata = $.extend(ujdata,{globalParam:$("#actionForm").formSerialize(),
           ajax:{
               url:'ajaxAction.action',
-              data:'code=${pmsIndex.tea_histask_param_search.code}&type=1'
+              data:'code=${pmsIndex.tea_exercises_exam.code}&type=1'
                }
           });
       	$('#grid').gridTB(ujdata,ujoption);
@@ -126,6 +126,11 @@ var ujoption = {
 				 			${pmsIndex.tea_histask_param_delete.name}×
 				 		</a>
 				 	</s:if>
+				 	<div style="float: right;margin-right: 15px;">
+				 		<span>名称检索：</span>
+		       		    <input type="text" name="searchMap.examName"  id="examName" style="width: 200px;" />
+						<a href="javascript:void(0)" id="_search"><span>查询</span></a>
+					</div>
 				</div>
 				</td>
 				</tr>
